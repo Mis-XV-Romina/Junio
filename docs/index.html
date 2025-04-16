@@ -1,66 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-16" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invitación XV Zoe Antonella</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <section class="pantalla">
-      <div class="invitacion">
-        <div class="contenido">
-          <button
-            class="play-btn"
-            onclick="alert('Aquí puedes poner música o animación')"
-          >
-            ▶
-          </button>
-        </div>
-        <img src="imagenes/fondoREV.png" alt="Invitación XV" class="fondo" />
-      </div>
-    </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Invitación XV Zoe Antonella</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section class="pantalla">
+            <div class="invitacion">
+                <div class="contenido">
+                    <button class="play-btn">
+                        <div class="icon-wrap" style="height: 34px; width: 34px; display: flex; align-items: center; justify-content: center;">
+                        <div class="play-p" id="iconoPlay" style="display: flex;">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                fill="white"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
 
-    <section class="pantalla">
-      <div class="invitacion">
-        <div class="contenido">
-          <a
-            href="https://maps.app.goo.gl/NX38TknnofLvXbgW9?g_st=aw"
-            target="_blank"
-            class="location-btn"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="23"
-              viewBox="0 0 24 24"
-              width="23"
-              fill="white"
-            >
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
-              />
-            </svg>
-            UBICACIÓN FIESTA
-          </a>
-          <a
-            href="https://api.whatsapp.com/send/?phone=5563218224&text=Gracias+por+la+invitación.+Nos+vemos+pronto+para+celebrar+este+día+tan+especial+para+Romina.💜&type=phone_number&app_absent=0"
-            target="_blank"
-            class="contact-btn"
-          >
-            <img
-              src="iconos/circle-check-regular.svg"
-              alt="check-icon"
-              style="
-                width: 23px;
-                height: 23px;
-                filter: invert(100%) brightness(1000%) !important;
-              "
-            />
-            CONFIRMAR
-          </a>
-        </div>
-        <img src="imagenes/fondo2.png" alt="Invitación XV" class="fondo" />
-      </div>
-    </section>
-  </body>
+                        <div
+                            class="play-p"
+                            id="iconoPause"
+                            style="display: none;"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                fill="white"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <audio id="miAudio">
+                        <source src="audio/music.webm" type="audio/webm" />
+                        <source src="audio/music.mp3" type="audio/mp3" />
+                    </audio>
+                </div>
+                <img
+                    src="imagenes/fondoREV.png"
+                    alt="Invitación XV"
+                    class="fondo"
+                />
+            </div>
+        </section>
+
+        <section class="pantalla">
+            <div class="invitacion">
+                <div class="contenido">
+                    <a
+                        href="https://maps.app.goo.gl/NX38TknnofLvXbgW9?g_st=aw"
+                        target="_blank"
+                        class="location-btn"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="23"
+                            viewBox="0 0 24 24"
+                            width="23"
+                            fill="white"
+                        >
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                            />
+                        </svg>
+                        UBICACIÓN FIESTA
+                    </a>
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=4421382353&text=Gracias+por+la+invitación.+Nos+vemos+pronto+para+celebrar+este+día+tan+especial+para+Romina.💜&type=phone_number&app_absent=0"
+                        target="_blank"
+                        class="contact-btn"
+                    >
+                        <img
+                            src="iconos/circle-check-regular.svg"
+                            alt="check-icon"
+                            style="
+                                width: 23px;
+                                height: 23px;
+                                filter: invert(100%) brightness(1000%) !important;
+                            "
+                        />
+                        CONFIRMAR
+                    </a>
+                </div>
+                <img
+                    src="imagenes/fondo2.png"
+                    alt="Invitación XV"
+                    class="fondo"
+                />
+            </div>
+        </section>
+
+        <!-- JS para reproducir -->
+        <script>
+
+          const iconoPlay = document.getElementById("iconoPlay");
+          const iconoPause = document.getElementById("iconoPause");
+          const playBtn = document.querySelector(".play-btn");
+          const audio = document.getElementById("miAudio");
+
+          playBtn.addEventListener("click", () => {
+            if (audio.paused) {
+              audio.play();
+              iconoPlay.style.display = "none";
+              iconoPause.style.display = "flex";
+            } else {
+              audio.pause();
+              iconoPlay.style.display = "flex";
+              iconoPause.style.display = "none";
+            }
+          });
+
+        </script>
+    </body>
 </html>
