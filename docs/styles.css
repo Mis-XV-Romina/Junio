@@ -17,6 +17,8 @@ select,
 a {
     -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
+    touch-action: manipulation !important;
+    user-select: none !important;
 }
 
 .pantalla {
